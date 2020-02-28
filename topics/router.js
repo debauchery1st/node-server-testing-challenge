@@ -10,4 +10,5 @@ router.get("/", (req, res) => {
 router.get("/all", (req, res) => {
   topics.all().then(t => res.status(200).json(t));
 });
+
 module.exports = router;
