@@ -8,7 +8,7 @@ router.use("/", (req, res) => {
 });
 
 router.get("/all", (req, res) => {
-  links.all().then(t => res.status(200).json(t));
+  links.all().then(l => res.status(200).json(l));
 });
 
 module.exports = router;
